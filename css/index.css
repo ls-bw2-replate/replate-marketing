@@ -1,6 +1,33 @@
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: red;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F1F1F1;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header .logo {
+  width: 35%;
+}
+header.content {
+  width: 60%;
+  margin-left: 50px;
+}
+.content p {
+  font-size: 3rem;
+  padding: 40px 40px 0 50px;
+}
+.logo img {
+  width: 250px;
 }
