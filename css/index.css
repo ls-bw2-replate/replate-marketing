@@ -142,36 +142,71 @@ body {
   padding-top: 20px;
   background-color: #F1F1F1;
 }
+@media (max-width: 500px) {
+  .container {
+    padding-top: 0;
+  }
+}
 header {
   width: 90%;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 30px auto;
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
 header .logo {
   width: 35%;
 }
+@media (max-width: 500px) {
+  header .logo {
+    width: 50%;
+  }
+}
 header .logo img {
   width: 250px;
+  margin-left: 30px;
 }
 header .content {
   width: 60%;
   margin-left: 50px;
 }
+@media (max-width: 500px) {
+  header .content {
+    width: 50%;
+    margin-left: 30px;
+  }
+}
 header .content p {
   font-size: 3rem;
-  padding: 40px 40px 0 50px;
+  margin-top: 20px;
+  padding: 60px 40px 0 40px;
+}
+@media (max-width: 500px) {
+  header .content p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 .cards {
   width: 90%;
   background-color: #fff;
   border-radius: 10px;
-  margin: 0px auto;
+  margin: 0px auto 30px auto;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .cards .card {
   display: flex;
@@ -180,20 +215,59 @@ header .content p {
   align-items: center;
   padding: 20px 0;
 }
+@media (max-width: 500px) {
+  .cards .card {
+    padding-top: 0;
+  }
+}
 .cards .card h2 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .cards .card h2 {
+    display: none;
+  }
+}
+.cards .card img {
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .cards .card img {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .cards .card button {
   background-color: #28810B;
-  border: 1px solid black;
+  border: 1px solid #FFEB56;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 30px;
+  margin-bottom: 20px;
 }
-.cards .card img {
-  width: 80%;
+@media (max-width: 500px) {
+  .cards .card button {
+    width: 90%;
+  }
+}
+.schedule {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("images/calendar.jpg");
+  background-size: contain;
   border-radius: 10px;
-  margin-bottom: 30px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schedule button {
+  background-color: #FFEB56;
+  padding: 10px;
+  border: 1px solid #28810B;
+  border-radius: 5px;
 }
 footer {
   margin: 40px 0;
