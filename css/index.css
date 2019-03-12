@@ -140,11 +140,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-top: 20px;
-  background-color: #F1F1F1;
+  background-color: #909090;
 }
 @media (max-width: 500px) {
   .container {
     padding-top: 0;
+    background-color: #FFF;
   }
 }
 header {
@@ -153,7 +154,7 @@ header {
   justify-content: space-around;
   margin: 0 auto 30px auto;
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
@@ -195,9 +196,24 @@ header .content p {
     text-align: center;
   }
 }
+footer {
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 0;
+  }
+}
+footer .footer-content {
+  text-align: center;
+  padding: 20px 0;
+}
+footer .footer-content p {
+  font-size: 1.6rem;
+}
 .cards {
   width: 90%;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 10px;
   margin: 0px auto 30px auto;
   display: flex;
@@ -207,6 +223,8 @@ header .content p {
   .cards {
     width: 100%;
     flex-direction: column;
+    border-radius: 0;
+    margin-bottom: 0;
   }
 }
 .cards .card {
@@ -218,7 +236,7 @@ header .content p {
 }
 @media (max-width: 500px) {
   .cards .card {
-    padding-top: 0;
+    padding: 0;
   }
 }
 .cards .card h2 {
@@ -240,24 +258,34 @@ header .content p {
   .cards .card img {
     width: 100%;
     margin-bottom: 0;
+    height: 280px;
+    border-radius: 0;
   }
 }
 .cards .card button {
-  background-color: #28810B;
+  background-color: #549D3F;
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px 30px;
   margin-bottom: 20px;
+  color: #FFF;
+}
+.cards .card button:hover {
+  background-color: #28810B;
 }
 @media (max-width: 500px) {
   .cards .card button {
-    width: 90%;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #28810B;
+    border-radius: 0;
   }
 }
 .schedule {
-  position: relative;
   width: 90%;
   margin: 0 auto;
+  background-image: url("../images/calendar.jpg");
+  background-size: cover;
   border-radius: 10px;
   height: 300px;
   display: flex;
@@ -267,6 +295,7 @@ header .content p {
 @media (max-width: 500px) {
   .schedule {
     width: 100%;
+    border-radius: 0;
   }
 }
 .schedule img {
@@ -275,28 +304,90 @@ header .content p {
   border-radius: 10px;
   opacity: 0.6;
 }
+@media (max-width: 500px) {
+  .schedule img {
+    border-radius: 0;
+  }
+}
 .schedule button {
-  position: absolute;
-  top: 120px;
-  left: 350px;
-  z-index: 2;
+  font-size: 1.5rem;
   background-color: #FFEB56;
   padding: 20px;
   border: 1px solid #28810B;
   border-radius: 5px;
 }
-footer {
-  margin: 40px 0;
+.about {
+  width: 90%;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: 30px auto 30px auto;
+  height: 300px;
 }
 @media (max-width: 500px) {
-  footer {
-    margin: 0;
+  .about {
+    width: 100%;
   }
 }
-footer .footer-content {
-  text-align: center;
-  padding: 20px 0;
+.about .tabs {
+  width: 100%;
 }
-footer .footer-content p {
-  font-size: 1.6rem;
+.about .tabs .tabs-links {
+  display: flex;
+  margin: 1px 0 1px 0;
+}
+.about .tabs .link {
+  padding: 20px 0;
+  text-align: center;
+  width: 20%;
+  font-size: 2rem;
+  background-color: #28810B;
+  border-right: 1px solid white;
+  color: #FFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.about .tabs .link:hover {
+  background-color: #549D3F;
+}
+.about .tabs .link-selected {
+  z-index: 2;
+  border: 1px solid #28810B;
+  background-color: #FFF;
+  color: #272727;
+}
+.about .tabs .link-selected:hover {
+  background-color: #FFF;
+}
+.about .tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.about .tabs .item {
+  display: none;
+  width: 75%;
+}
+.about .tabs .item .item-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.about .tabs .item .item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about .tabs .item .item-description .content {
+  font-size: 1.8rem;
+}
+.about .tabs .item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+.about .tabs .item-selected {
+  display: flex;
+  justify-content: space-around;
 }

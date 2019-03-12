@@ -1,0 +1,65 @@
+// Cards section
+.cards {
+  width: 90%;
+  background-color: @white;
+  border-radius: 10px;
+  margin: 0px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  @media @mobile {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    @media @mobile {
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    img {
+      width: 90%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      height: 180px;
+      @media @mobile {
+        width: 100%;
+        margin-bottom: 0;
+        height: 280px;
+        border-radius: 0;
+      }
+    }
+
+    button {
+      background-color: @lt-green;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px 30px;
+      margin-bottom: 20px;
+      color: @white;
+      &:hover {
+        background-color: @dk-green;
+      }
+      @media @mobile {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: @dk-green;
+        border-radius: 0;
+      }
+    }
+  } // card
+} // cards
