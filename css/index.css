@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .container {
+    padding-top: 0;
+  }
+}
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+header .logo {
+  width: 35%;
+}
+@media (max-width: 500px) {
+  header .logo {
+    width: 50%;
+  }
+}
+header .logo img {
+  width: 250px;
+  margin-left: 30px;
+}
+header .content {
+  width: 60%;
+  margin-left: 50px;
+}
+@media (max-width: 500px) {
+  header .content {
+    width: 50%;
+    margin-left: 30px;
+  }
+}
+header .content p {
+  font-size: 3rem;
+  margin-top: 20px;
+  padding: 60px 40px 0 40px;
+}
+@media (max-width: 500px) {
+  header .content p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+.cards {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .cards .card {
+    padding-top: 0;
+  }
+}
+.cards .card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .cards .card h2 {
+    display: none;
+  }
+}
+.cards .card img {
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  height: 180px;
+}
+@media (max-width: 500px) {
+  .cards .card img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.cards .card button {
+  background-color: #28810B;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .cards .card button {
+    width: 90%;
+  }
+}
+.schedule {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .schedule {
+    width: 100%;
+  }
+}
+.schedule img {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.schedule button {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  z-index: 2;
+  background-color: #FFEB56;
+  padding: 20px;
+  border: 1px solid #28810B;
+  border-radius: 5px;
+}
+footer {
+  margin: 40px 0;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 0;
+  }
+}
+footer .footer-content {
+  text-align: center;
+  padding: 20px 0;
+}
+footer .footer-content p {
+  font-size: 1.6rem;
+}
