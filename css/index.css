@@ -213,7 +213,7 @@ footer .footer-content p {
 }
 .cards {
   width: 90%;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 10px;
   margin: 0px auto 30px auto;
   display: flex;
@@ -265,14 +265,16 @@ footer .footer-content p {
   border-radius: 5px;
   padding: 10px 30px;
   margin-bottom: 20px;
+  color: #FFF;
 }
 .cards .card button:hover {
   background-color: #28810B;
 }
 @media (max-width: 500px) {
   .cards .card button {
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
+    background-color: #28810B;
   }
 }
 .schedule {
@@ -313,19 +315,20 @@ footer .footer-content p {
 }
 .about .tabs {
   width: 100%;
-  margin-left: 5px;
 }
 .about .tabs .tabs-links {
   display: flex;
-  border-radius: 0 7px 7px 0;
+  margin: 1px 0 1px 0;
 }
 .about .tabs .link {
-  padding: 20px 45px;
+  padding: 20px 0;
+  text-align: center;
+  width: 20%;
   font-size: 2rem;
   background-color: #28810B;
   border-right: 1px solid white;
   color: #fff;
-  border-radius: 7px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .about .tabs .link:hover {
@@ -333,7 +336,7 @@ footer .footer-content p {
 }
 .about .tabs .link-selected {
   z-index: 2;
-  border-right: 1px solid #28810B;
+  border: 1px solid #28810B;
   background-color: #fff;
   color: black;
 }
