@@ -5,17 +5,49 @@ html {
   width: 100%;
   background: #eeeaea;
 }
-.header_logo {
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .container header {
+    flex-wrap: wrap;
+  }
+}
+.container .header_logo {
   width: 10%;
   height: 10%;
   margin-left: 3%;
 }
 @media (max-width: 600px) {
-  .header_logo {
+  .container .header_logo {
     display: flex;
     justify-content: center;
-    width: 90%;
-    height: 5%;
+    width: 100%;
+    height: 20%;
+  }
+}
+.container button {
+  width: 200px;
+  height: 45px;
+  font-size: 23px;
+  background-color: #28810B;
+  color: black;
+  border-radius: 6px;
+  margin-right: 80px;
+}
+@media (max-width: 600px) {
+  .container button {
+    width: 100%;
+    height: 45%;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 .box_container {
@@ -32,7 +64,7 @@ html {
     flex-direction: column;
     justify-content: center;
     padding-left: 0;
-    width: 95%;
+    width: 98%;
   }
 }
 .box_container .box_logo {
@@ -53,6 +85,7 @@ html {
 @media (max-width: 600px) {
   .box_container .box_content {
     padding-left: 30%;
+    width: 85%;
   }
 }
 .box_container .learn {
@@ -69,6 +102,7 @@ html {
     width: 80%;
     margin-left: 0;
     padding-left: 0;
+    margin-bottom: 15px;
   }
 }
 .body {
@@ -120,7 +154,7 @@ html {
 }
 @media (max-width: 600px) {
   .bottom {
-    width: 90%;
+    width: 95%;
     flex-direction: column;
   }
 }
@@ -152,6 +186,11 @@ html {
 .bottom .left_side {
   width: 55%;
 }
+@media (max-width: 600px) {
+  .bottom .left_side {
+    width: 90%;
+  }
+}
 .bottom p {
   line-height: 1.5;
 }
@@ -163,12 +202,23 @@ html {
   color: black;
   border-radius: 15px;
 }
+@media (max-width: 600px) {
+  .bottom button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 footer {
   margin-right: 3%;
   margin-left: 3%;
   margin-top: 3%;
   height: 50px;
   background-color: black;
+}
+@media (max-width: 600px) {
+  footer {
+    width: 95%;
+  }
 }
 footer p {
   color: #28810B;

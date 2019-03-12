@@ -4,7 +4,16 @@ html{
 .container{
    width:100%;
     background:rgb(238, 234, 234);
-
+    @media(max-width:600px){
+        width:95%;
+    }
+header{
+    display:flex;
+    justify-content:space-between;
+    @media(max-width:600px){
+        flex-wrap:wrap;
+    }
+    
 } 
 .header_logo{
     width:10%;
@@ -13,9 +22,26 @@ html{
     @media(max-width:600px){
         display:flex;
         justify-content:center;
-        width:90%;
-        height:5%;
+        width:100%;
+        height:20%;
     }
+}
+button{
+    width:200px;
+    height:45px;
+    font-size:23px;
+    background-color:#28810B;
+    color:black;
+    border-radius:6px;
+    margin-right:80px;
+    @media(max-width:600px){
+        width:100%;
+        height:45%;
+        margin-left:40px;
+        margin-top:5px;
+        margin-bottom:5px
+    }
+}
 }
 .box_container{
     width:80%;
@@ -29,7 +55,7 @@ html{
         flex-direction:column;
         justify-content:center;
         padding-left:0;
-        width:95%;
+        width:98%;
     }
 
 .box_logo{
@@ -47,6 +73,7 @@ height:70%;
     justify-content:center;
     @media(max-width:600px){
         padding-left:30%;
+        width:85%;
     }
 }
 
@@ -62,6 +89,7 @@ height:70%;
         width:80%;
         margin-left:0;
         padding-left:0;
+        margin-bottom:15px;
     }
 }
 }
@@ -108,7 +136,7 @@ p{
     justify-content:space-between;
     align-items:center;
     @media(max-width:600px){
-        width:90%;
+        width:95%;
         flex-direction:column;
     }
 .right_side{
@@ -136,6 +164,9 @@ flex-direction:column;
 }
 .left_side{
 width:55%;
+@media(max-width:600px){
+    width:90%;
+}
 }
 p{
     line-height:1.5;
@@ -147,6 +178,10 @@ button{
     background-color:#28810B;
     color:black;
     border-radius:15px;
+    @media(max-width:600px){
+        width:100%;
+        margin-left:0;
+    }
 }
 }
 footer{
@@ -155,6 +190,9 @@ footer{
     margin-top:3%;
     height:50px;
     background-color:black;
+    @media(max-width:600px){
+        width:95%;
+    }
 
     p{
         color: #28810B;
