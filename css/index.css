@@ -260,11 +260,14 @@ footer .footer-content p {
   }
 }
 .cards .card button {
-  background-color: #28810B;
+  background-color: #549D3F;
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px 30px;
   margin-bottom: 20px;
+}
+.cards .card button:hover {
+  background-color: #28810B;
 }
 @media (max-width: 500px) {
   .cards .card button {
@@ -295,8 +298,62 @@ footer .footer-content p {
   opacity: 0.6;
 }
 .schedule button {
+  font-size: 1.5rem;
   background-color: #FFEB56;
   padding: 20px;
   border: 1px solid #28810B;
   border-radius: 5px;
+}
+.about {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 30px auto 30px auto;
+  height: 300px;
+}
+.about .tabs {
+  width: 100%;
+}
+.about .tabs .tabs-links {
+  display: flex;
+  background-color: #28810B;
+}
+.about .tabs .link {
+  padding: 20px 45px;
+  font-size: 2rem;
+  background-color: #28810B;
+  border-right: 1px solid white;
+  color: #fff;
+  cursor: pointer;
+}
+.about .tabs .link:hover {
+  background-color: #549D3F;
+}
+.about .tabs .link-selected {
+  z-index: 2;
+  border-right: 1px solid #28810B;
+  background-color: #fff;
+  color: black;
+}
+.about .tabs .link-selected:hover {
+  background-color: #fff;
+}
+.about .tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.about .tabs .item {
+  display: none;
+  width: 75%;
+}
+.about .tabs .item .item-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.about .tabs .item-selected {
+  display: block;
 }
