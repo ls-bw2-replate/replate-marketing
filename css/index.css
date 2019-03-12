@@ -145,7 +145,7 @@ body {
 @media (max-width: 500px) {
   .container {
     padding-top: 0;
-    background-color: #fff;
+    background-color: #FFF;
   }
 }
 header {
@@ -154,7 +154,7 @@ header {
   justify-content: space-around;
   margin: 0 auto 30px auto;
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
@@ -223,6 +223,8 @@ footer .footer-content p {
   .cards {
     width: 100%;
     flex-direction: column;
+    border-radius: 0;
+    margin-bottom: 0;
   }
 }
 .cards .card {
@@ -234,7 +236,7 @@ footer .footer-content p {
 }
 @media (max-width: 500px) {
   .cards .card {
-    padding-top: 0;
+    padding: 0;
   }
 }
 .cards .card h2 {
@@ -257,6 +259,7 @@ footer .footer-content p {
     width: 100%;
     margin-bottom: 0;
     height: 280px;
+    border-radius: 0;
   }
 }
 .cards .card button {
@@ -273,8 +276,9 @@ footer .footer-content p {
 @media (max-width: 500px) {
   .cards .card button {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     background-color: #28810B;
+    border-radius: 0;
   }
 }
 .schedule {
@@ -291,6 +295,7 @@ footer .footer-content p {
 @media (max-width: 500px) {
   .schedule {
     width: 100%;
+    border-radius: 0;
   }
 }
 .schedule img {
@@ -298,6 +303,11 @@ footer .footer-content p {
   height: 220px;
   border-radius: 10px;
   opacity: 0.6;
+}
+@media (max-width: 500px) {
+  .schedule img {
+    border-radius: 0;
+  }
 }
 .schedule button {
   font-size: 1.5rem;
@@ -308,10 +318,15 @@ footer .footer-content p {
 }
 .about {
   width: 90%;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 10px;
   margin: 30px auto 30px auto;
   height: 300px;
+}
+@media (max-width: 500px) {
+  .about {
+    width: 100%;
+  }
 }
 .about .tabs {
   width: 100%;
@@ -327,7 +342,7 @@ footer .footer-content p {
   font-size: 2rem;
   background-color: #28810B;
   border-right: 1px solid white;
-  color: #fff;
+  color: #FFF;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -337,11 +352,11 @@ footer .footer-content p {
 .about .tabs .link-selected {
   z-index: 2;
   border: 1px solid #28810B;
-  background-color: #fff;
-  color: black;
+  background-color: #FFF;
+  color: #272727;
 }
 .about .tabs .link-selected:hover {
-  background-color: #fff;
+  background-color: #FFF;
 }
 .about .tabs .tabs-items {
   width: 100%;
@@ -361,11 +376,18 @@ footer .footer-content p {
 }
 .about .tabs .item .item-description {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .about .tabs .item .item-description .content {
   font-size: 1.8rem;
 }
+.about .tabs .item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
 .about .tabs .item-selected {
-  display: block;
+  display: flex;
+  justify-content: space-around;
 }

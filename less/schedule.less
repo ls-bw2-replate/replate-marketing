@@ -8,8 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 500px) {
+  @media @mobile {
     width: 100%;
+    border-radius: 0;
   }
 
   img {
@@ -17,13 +18,16 @@
     height: 220px;
     border-radius: 10px;
     opacity: 0.6;
+    @media @mobile {
+      border-radius: 0;
+    }
   }
 
   button {
     font-size: 1.5rem;
-    background-color: #FFEB56;
+    background-color: @yellow;
     padding: 20px;
-    border: 1px solid #28810B;
+    border: 1px solid @dk-green;
     border-radius: 5px;
   }
 } // schedule
