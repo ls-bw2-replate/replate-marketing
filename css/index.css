@@ -340,15 +340,6 @@ footer .footer-content p {
     border: none;
   }
 }
-.cards .card button .outer {
-  visibility: hidden;
-}
-@media (max-width: 500px) {
-  .cards .card button .outer {
-    margin-bottom: 0;
-    visibility: visible;
-  }
-}
 .schedule {
   width: 90%;
   margin: 0 auto;
