@@ -184,6 +184,7 @@ header {
   width: 90%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto 30px auto;
   padding: 10px 20px;
   background-color: #FFF;
@@ -226,8 +227,8 @@ header .content {
 }
 header .content p {
   font-size: 3rem;
-  margin-top: 20px;
-  padding: 60px 40px 0 40px;
+  margin-bottom: 2%;
+  padding: 0 40px 0 40px;
 }
 @media (max-width: 500px) {
   header .content p {
@@ -252,7 +253,6 @@ footer .footer-content p {
 }
 .cards {
   width: 90%;
-  background-color: #FFF;
   border-radius: 10px;
   margin: 0px auto 30px auto;
   display: flex;
@@ -271,7 +271,7 @@ footer .footer-content p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
+  background-color: #FFF;
 }
 @media (max-width: 500px) {
   .cards .card {
@@ -306,6 +306,11 @@ footer .footer-content p {
   width: 90%;
   line-height: 1.6;
   padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .cards .card p {
+    margin-top: 3%;
+  }
 }
 .cards .card button {
   background-color: #549D3F;
@@ -423,9 +428,11 @@ footer .footer-content p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 50%;
 }
 .about .tabs .item .item-description .content {
   font-size: 1.8rem;
+  margin-bottom: 2%;
 }
 .about .tabs .item img {
   width: 150px;
@@ -472,12 +479,14 @@ footer .footer-content p {
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 2%;
 }
 .bottom .secondline {
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 3%;
+  margin-left: 2%;
 }
 .bottom .left_side {
   width: 55%;
