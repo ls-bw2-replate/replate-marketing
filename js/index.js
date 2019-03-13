@@ -1,21 +1,3 @@
-let images=document.querySelectorAll('.pics');
- images.forEach(function(index, i){
-    images[i].addEventListener('mouseover', function(event) {
-        event.target.style.opacity='0.5';
-    });
-    images[i].addEventListener('mouseout', function(event) {
-        event.target.style.opacity='1';
-    });                    
-});
-let pic=document.querySelectorAll('.bottom-pic');
- pic.forEach(function(index, i){
-    pic[i].addEventListener('mouseover', function(event) {
-        event.target.style.opacity='0.5';
-    });
-    pic[i].addEventListener('mouseout', function(event) {
-        event.target.style.opacity='1';
-    });                    
-});
 class TabLink {
     constructor(element) {
       
@@ -64,3 +46,14 @@ class TabLink {
   links.forEach((link)=>{
     return new TabLink(link);
   })
+  
+  let images=document.querySelectorAll('.pics');
+ images.forEach(function(index, i){
+    images[i].addEventListener('mouseover', function(event) {
+        event.target.style.opacity='0.5';
+    });
+    images[i].addEventListener('mouseout', function(event) {
+        event.target.style.opacity='1';
+    });                    
+
+});
