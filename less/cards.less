@@ -22,6 +22,7 @@
     padding: 20px 0;
     @media @mobile {
       padding: 0;
+      margin-top: 0;
     }
 
     img {
@@ -58,7 +59,11 @@
       padding-bottom: 20px;
     }
 
-    
+    a {
+      @media @mobile {
+        width: 100%;
+      }
+    }
 
     button {
       background-color: @lt-green;
