@@ -9,6 +9,9 @@ nav{
   img{
     width:12%;
     height:12%;
+    @media @mobile {
+      display:none;
+    }
   }
 
 a{
@@ -20,6 +23,9 @@ color:black;
   width:40%;
   display:flex;
   justify-content:space-between;
+  @media @mobile {
+    width: 100%;
+  }
 }
 }
 
@@ -40,12 +46,16 @@ header {
   .logo {
     width: 35%;
     @media @mobile {
-      width: 50%;
+      width: 100%;
     }
   
     img{
       width: 250px;
       margin-left: 30px;
+      @media @mobile {
+        width: 100%;
+        margin-left:0;
+      }
     }
   } // logo
 
@@ -55,6 +65,7 @@ header {
     @media @mobile {
       width: 50%;
       margin-left: 30px;
+      display:none;
     }
 
     p {
