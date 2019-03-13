@@ -161,6 +161,7 @@ header {
   header {
     width: 100%;
     margin-bottom: 0;
+    border-radius: 0;
   }
 }
 header .logo {
@@ -168,12 +169,18 @@ header .logo {
 }
 @media (max-width: 500px) {
   header .logo {
-    width: 50%;
+    width: 100%;
   }
 }
 header .logo img {
   width: 250px;
   margin-left: 30px;
+}
+@media (max-width: 500px) {
+  header .logo img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 header .content {
   width: 60%;
@@ -183,6 +190,7 @@ header .content {
   header .content {
     width: 50%;
     margin-left: 30px;
+    display: none;
   }
 }
 header .content p {
@@ -225,6 +233,7 @@ footer .footer-content p {
     flex-direction: column;
     border-radius: 0;
     margin-bottom: 0;
+    background-color: #909090;
   }
 }
 .cards .card {
@@ -276,9 +285,11 @@ footer .footer-content p {
 @media (max-width: 500px) {
   .cards .card button {
     width: 100%;
-    margin-bottom: 0;
     background-color: #28810B;
     border-radius: 0;
+    padding: 20px 0;
+    font-size: 1.8rem;
+    border: none;
   }
 }
 .schedule {
@@ -360,7 +371,6 @@ footer .footer-content p {
 }
 .about .tabs .tabs-items {
   width: 100%;
-  height: 300px;
   display: flex;
   justify-content: center;
   padding-top: 50px;
