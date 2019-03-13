@@ -35,3 +35,13 @@ let links = document.querySelectorAll('.link');
 links.forEach(function (link) {
   return new TabLink(link);
 });
+
+let images = document.querySelectorAll('.pics');
+images.forEach(function (index, i) {
+  images[i].addEventListener('mouseover', function (event) {
+    event.target.style.opacity = '0.5';
+  });
+  images[i].addEventListener('mouseout', function (event) {
+    event.target.style.opacity = '1';
+  });
+});
