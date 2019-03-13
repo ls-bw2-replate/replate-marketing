@@ -18,17 +18,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
     padding: 20px 0;
     @media @mobile {
       padding: 0;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      @media @mobile {
-        display: none;
-      }
     }
 
     img {
@@ -44,23 +37,29 @@
       }
     }
 
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      @media @mobile {
+        display: none;
+      }
+    }
+
     p {
       font-size:14px;
       width:90%;
       line-height:1.6;
-      padding-bottom:4%;
+      padding-bottom: 20px;
     }
 
-    .outer {
-      margin-bottom: 20%;
-    }
+    
 
     button {
       background-color: @lt-green;
       border: 1px solid black;
       border-radius: 5px;
       padding: 10px 30px;
-      margin-bottom: 20px;
+      margin: 20px 0;
       color: @white;
       &:hover {
         background-color: @dk-green;
@@ -71,6 +70,13 @@
         border-radius: 0;
         margin-bottom: 0;
         border: none;
+      }
+      .outer {
+        visibility: hidden;
+        @media @mobile {
+          margin-bottom: 0;
+          visibility: visible;
+        }
       }
     }
   } // card
