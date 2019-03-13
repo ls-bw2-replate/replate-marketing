@@ -7,130 +7,57 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Replate</title>
   <link rel="stylesheet" href="./css/index.css">
-
+  <script defer="defer" src="./about/about.js"></script>
 </head>
-
 <body>
-
+        
   <div class="container home">
-    <nav>
-      <img src='images/replate_text.png'>
-      <div class="links">
-        <a href='#card'>
-          <font color="#28810B">Ab</font>out
-        </a>
-        <a href="team.html">
-          <font color="#28810B">Ou</font>r Team
-        </a>
-        <a>
-          <font color="#28810B">Si</font>gn Up
-        </a>
-      </div>
-    </nav>
+<nav>
+  <img src='images/replate_text.png'>
+  <div class="links">
+  <a href='#card'><font color="#28810B">Ab</font>out</a>
+  <a href="team.html"><font color="#28810B">Ou</font>r Team</a>
+  <a><font color="#28810B">Si</font>gn Up</a>
+  </div>
+</nav>
     <header>
       <div class="logo">
         <img src="images/replate_crop.png" alt="replate logo">
       </div>
       <div class="content">
-        <p>Getting leftovers to people in need</p>
+        <p style="text-align:center">Welcome to <font color="#28810B">Re</font>plate!</p> <p>We get leftovers to people in need</p>
       </div>
     </header>
 
     <section>
-      <div id="card" class="cards">
+      <div class="cards">
         <div class="card">
-          <img class="pics" src="images/bread.jpg" alt="loaves of bread nex to wheat on a table">
+            <img src="images/bread.jpg" class='pics' alt="loaves of bread nex to wheat on a table">
           <h2>Donors</h2>
-          <p>Help feed the hungry and reduce waste! Instead of throwing away food at the end of the night,
-            we will have
-            our Volunteers pick it up and take it to Pantries where it will feed the needy. We need your help to feed
-            our hungy communities</p>
-          <button class="outer">Sign Up or Login</button>
+          <p>Help feed the hungry and reduce waste! Instead of throwing away food at the end of the night, we will have our Volunteers pick it up and take it to Pantries where it will feed the needy. We need your help to feed our hungy communities</p>
+          <button>Volunteer Login</button>
         </div>
         <div class="card">
-          <img class="pics" src="images/deliver.jpg" alt="woman holding a large box">
+            <img src="images/deliver.jpg" class='pics' alt="woman holding a large box">
           <h2>Volunteers</h2>
-          <p>Volunteers are the backbone of our orginiaztion. We need you to pick up food that resturants won't use, and
-            transport it to Local food pantries where it will be put to use to feed the needy. Any time you give us
-            would be much appricated. Click to sign up</p>
-          <button>Sign Up or Login</button>
+          <p>Volunteers are the backbone of our orginiaztion. We need you to pick up food that resturants won't use, and transport it to Local food pantries where it will be put to use to feed the needy. Any time you give us would be much appricated.Click to sign up</p>
+          <button>Volunteer Login</button>
         </div>
         <div class="card">
-          <img class="pics" src="images/meal.jpg" alt="a grilled sandwich and a bowl of pasta on a plate">
-          <h2>Pantry</h2>
-          <p>Have ingredients and lefover food from local Resturants brought to you. We understand the
-            valueble serivce
-            you provide to your community and we want to make things easier on you. Sign up today and increase the
-            amount of people you can feed</p>
-          <button class="outer">Sign Up or Login</button>
+            <img src="images/meal.jpg" class='pics' alt="hands holding food to share">
+          <h2>Pantries</h2>
+          <p>Have ingredients and lefover food from local Resturants brought to you. We understand the valueble serivce you provide to your community and we want to make things easier on you. Sign up today and increase the amount of people you can feed</p>
+          <button>Volunteer Login</button>
         </div>
       </div>
     </section>
 
     <section class="schedule">
-      <img src="images/eating_together.svg" alt="drawing of 2 people eating at a table">
-      <img src="images/reataurant_chef.svg" alt="drawing of a chef in a kitchen">
-      <!-- <div class="calendar">
-       <img src="images/calendar.jpg" alt="numbers on a calendar"> 
+      <div class="calendar">
+        <!-- <img src="images/calendar.jpg" alt="numbers on a calendar"> -->
         <a href="#"><button>Login to check the schedule</button></a>
-      </div> -->
-    </section>
-
-    <!-- <section class="about">
-      <div class="tabs">
-        <div class="tabs-links">
-          <div class="link link-selected" data-tab="1">Scott</div>
-          <div class="link" data-tab="2">Tyler</div>
-          <div class="link" data-tab="3">Cam</div>
-          <div class="link" data-tab="4">Ian</div>
-          <div class="link" data-tab="5">Randy</div>
-        </div>
-
-        <div class="tabs-items">
-
-          <div class="item item-selected" data-tab="1">
-            <div class="item-description">
-              <h2 class="item-title">Scott Bennett</h2>
-              <p class="content">Team Lead</p>
-            </div>
-            <img src="https://ca.slack-edge.com/T4JUEB3ME-UCDB19TUK-0577076aac03-48" alt="Scott Bennett">
-          </div>
-
-          <div class="item" data-tab="2">
-            <div class="item-description">
-              <h2 class="item-title">Tyler Foreman</h2>
-              <p class="content">Web User Interface Developer</p>
-            </div>
-            <img id="tyler" src="https://ca.slack-edge.com/T4JUEB3ME-UEM5YBTNJ-d5979ace7093-72" alt="Tyler Foreman">
-          </div>
-
-          <div class="item" data-tab="3">
-            <div class="item-description">
-              <h2 class="item-title">Cam MacDonald</h2>
-              <p class="content">Web User Interface Developer</p>
-            </div>
-            <img src="https://ca.slack-edge.com/T4JUEB3ME-UFJJXFPT9-df3a1f76762b-48" alt="Cam MacDonald">
-          </div>
-
-          <div class="item" data-tab="4">
-            <div class="item-description">
-              <h2 class="item-title">Ian Belknap</h2>
-              <p class="content">Front End Architect</p>
-            </div>
-            <img src="https://ca.slack-edge.com/T4JUEB3ME-UEX6HR46P-20db2d58ecd9-48" alt="Ian Belknap">
-          </div>
-
-          <div class="item" data-tab="5">
-            <div class="item-description">
-              <h2 class="item-title">Randy Wilson</h2>
-              <p class="content">Back End Architect</p>
-            </div>
-            <img src="https://ca.slack-edge.com/T4JUEB3ME-U805SN6TC-f579479336b7-48" alt="Randy Wilson">
-          </div>
-        </div>
       </div>
-    </section> -->
-
+    </section>
     <footer>
       <div class="footer-content">
         <p>Copyright Replate 2019</p>
@@ -139,7 +66,6 @@
 
   </div>
 
-  <script src="./about/about.js"></script>
 </body>
 
 </html>
