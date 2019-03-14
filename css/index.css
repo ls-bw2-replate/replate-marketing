@@ -303,6 +303,13 @@ footer .footer-content p {
   line-height: 1.6;
   padding-bottom: 4%;
 }
+@media (max-width: 500px) {
+  .cards .card p {
+    padding-bottom: 0;
+    padding-top: 4%;
+    font-size: 18px;
+  }
+}
 .cards .card h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -311,12 +318,6 @@ footer .footer-content p {
   .cards .card h2 {
     display: none;
   }
-}
-.cards .card p {
-  font-size: 14px;
-  width: 90%;
-  line-height: 1.6;
-  padding-bottom: 20px;
 }
 @media (max-width: 500px) {
   .cards .card a {
@@ -341,6 +342,8 @@ footer .footer-content p {
     border-radius: 0;
     margin-bottom: 0;
     border: none;
+    padding: 20px 30px;
+    font-size: 2rem;
   }
 }
 .schedule {
