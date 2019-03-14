@@ -13,8 +13,6 @@ class TabLink {
     });
     this.element.classList.toggle('link-selected');
     this.tabItem.select();
-    console.log('hello');
-
   }
 }
 
@@ -45,12 +43,23 @@ images.forEach(function (index, i) {
     event.target.style.opacity = '1';
   });
 });
+
+let navLinks = document.querySelectorAll('.links a');
+navLinks.forEach(function (index, i) {
+  navLinks[i].addEventListener('mouseover', function (event) {
+    event.target.style.transform = 'scale(1.2)';
+  });
+  navLinks[i].addEventListener('mouseout', function (event) {
+    event.target.style.transform = 'scale(1.0)';
+  });
+});
+
 let profile = document.querySelectorAll('.profile');
 profile.forEach(function (index, i) {
-  profile[i].addEventListener('mouseover', (event)=> {
-    event.target.style.transform='scale(1.2)';
+  profile[i].addEventListener('mouseover', (event) => {
+    event.target.style.transform = 'scale(1.2)';
   });
   profile[i].addEventListener('mouseout', (event) => {
-    event.target.style.transform='scale(1.0)';
+    event.target.style.transform = 'scale(1.0)';
   });
 });

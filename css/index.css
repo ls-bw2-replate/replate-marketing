@@ -183,6 +183,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav span {
+  color: #28810B;
+}
 nav .links {
   width: 40%;
   display: flex;
@@ -314,7 +317,7 @@ footer .footer-content p {
 }
 .cards .card img {
   width: 90%;
-  height: 180px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -381,7 +384,6 @@ footer .footer-content p {
   .cards .card button {
     width: 100%;
     background-color: #28810B;
-    border-radius: 0;
     margin-bottom: 0;
     border: none;
     padding: 20px 30px;
