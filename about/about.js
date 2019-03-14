@@ -45,3 +45,13 @@ images.forEach(function (index, i) {
     event.target.style.opacity = '1';
   });
 });
+
+let navLinks = document.querySelectorAll('.links a');
+navLinks.forEach(function (index, i) {
+  navLinks[i].addEventListener('mouseover', function (event) {
+    event.target.style.transform = 'scale(1.2)';
+  });
+  navLinks[i].addEventListener('mouseout', function (event) {
+    event.target.style.transform = 'scale(1.0)';
+  });
+});
