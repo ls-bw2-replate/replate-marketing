@@ -138,6 +138,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 1000px;
   width: 100%;
@@ -306,20 +309,21 @@ footer .footer-content p {
     width: 100%;
     padding: 0;
     margin-top: 0;
+    border-radius: 10px;
   }
 }
 .cards .card img {
   width: 90%;
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 30px;
-  height: 180px;
 }
 @media (max-width: 500px) {
   .cards .card img {
     width: 100%;
-    margin-bottom: 0;
     height: 280px;
-    border-radius: 0;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
   }
 }
 .cards .card p {
@@ -327,6 +331,13 @@ footer .footer-content p {
   width: 90%;
   line-height: 1.6;
   padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .cards .card p {
+    padding-bottom: 0;
+    padding-top: 4%;
+    font-size: 18px;
+  }
 }
 .cards .card h2 {
   font-size: 2.5rem;
@@ -337,12 +348,6 @@ footer .footer-content p {
   .cards .card h2 {
     display: none;
   }
-}
-.cards .card p {
-  font-size: 14px;
-  width: 90%;
-  line-height: 1.6;
-  padding-bottom: 20px;
 }
 .cards .card .card-content {
   height: 60%;
@@ -379,15 +384,9 @@ footer .footer-content p {
     border-radius: 0;
     margin-bottom: 0;
     border: none;
-  }
-}
-.cards .card button .outer {
-  visibility: hidden;
-}
-@media (max-width: 500px) {
-  .cards .card button .outer {
-    margin-bottom: 0;
-    visibility: visible;
+    padding: 20px 30px;
+    font-size: 2rem;
+    border-radius: 0 0 10px 10px;
   }
 }
 .schedule {
