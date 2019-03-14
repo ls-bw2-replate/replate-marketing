@@ -13,8 +13,6 @@ class TabLink {
     });
     this.element.classList.toggle('link-selected');
     this.tabItem.select();
-    console.log('hello');
-
   }
 }
 
