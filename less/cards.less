@@ -20,7 +20,9 @@
     align-items: center;
     margin-top: 20px;
     padding: 20px 0;
+    width:35%;
     @media @mobile {
+      width:100%;
       padding: 0;
       margin-top: 0;
     }
@@ -47,6 +49,7 @@
     h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
+      text-align:center;
       @media @mobile {
         display: none;
       }
@@ -57,6 +60,17 @@
       width:90%;
       line-height:1.6;
       padding-bottom: 20px;
+    }
+    .card-content{
+      height:60%;
+      width:90%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      @media @mobile{
+        width:100%;
+      }
+
     }
 
     a {

@@ -299,9 +299,11 @@ footer .footer-content p {
   align-items: center;
   margin-top: 20px;
   padding: 20px 0;
+  width: 35%;
 }
 @media (max-width: 500px) {
   .cards .card {
+    width: 100%;
     padding: 0;
     margin-top: 0;
   }
@@ -329,6 +331,7 @@ footer .footer-content p {
 .cards .card h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .cards .card h2 {
@@ -340,6 +343,18 @@ footer .footer-content p {
   width: 90%;
   line-height: 1.6;
   padding-bottom: 20px;
+}
+.cards .card .card-content {
+  height: 60%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .cards .card .card-content {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .cards .card a {
