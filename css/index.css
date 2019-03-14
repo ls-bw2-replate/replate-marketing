@@ -188,6 +188,7 @@ header {
   width: 90%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto 30px auto;
   padding: 10px 20px;
   background-color: #FFF;
@@ -229,8 +230,8 @@ header .content {
 }
 header .content p {
   font-size: 3rem;
-  margin-top: 20px;
-  padding: 60px 40px 0 40px;
+  margin-bottom: 2%;
+  padding: 0 40px 0 40px;
 }
 @media (max-width: 500px) {
   header .content p {
@@ -433,6 +434,7 @@ footer .footer-content p {
 }
 .about .tabs .item .item-description .content {
   font-size: 1.8rem;
+  margin: 2%;
 }
 .about .tabs .item img {
   width: 150px;
@@ -479,12 +481,14 @@ footer .footer-content p {
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 2%;
 }
 .bottom .secondline {
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 3%;
+  margin-left: 2%;
 }
 .bottom .left_side {
   width: 55%;
