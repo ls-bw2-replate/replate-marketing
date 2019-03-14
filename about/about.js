@@ -45,3 +45,12 @@ images.forEach(function (index, i) {
     event.target.style.opacity = '1';
   });
 });
+let profile = document.querySelectorAll('.profile');
+profile.forEach(function (index, i) {
+  profile[i].addEventListener('mouseover', (event)=> {
+    event.target.style.transform='scale(1.2)';
+  });
+  profile[i].addEventListener('mouseout', (event) => {
+    event.target.style.transform='scale(1.0)';
+  });
+});
