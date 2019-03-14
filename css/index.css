@@ -483,7 +483,7 @@ footer .footer-content p {
 }
 .about .tabs .item .item-description .content {
   font-size: 1.8rem;
-  margin: 2%;
+  margin-bottom: 2%;
 }
 .about .tabs .item img {
   width: 150px;
